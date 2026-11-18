@@ -1,0 +1,13 @@
+:root {color-scheme: dark; font: 14px/1.45 system-ui, sans-serif; background: #101617; color: #e5f0eb}
+body {margin: 0; width: 342px}
+main {padding: 21px}
+h1 {font-size: 25px; margin: 0}
+p {color: #a0b4af; margin: 4px 0 16px}
+label {display: block}
+.switch {padding: 7px 0; display: flex; gap: 9px; align-items: center}
+.switch:last-of-type {margin-bottom: 10px}
+input {accent-color: #8aeac1; width: 16px; height: 16px; margin: 0}
+textarea {display: block; box-sizing: border-box; width: 100%; border: 1px solid #526666; border-radius: 6px; color: inherit; background: #172324; padding: 9px; margin-top: 6px; font: inherit; resize: vertical}
+footer {margin-top: 14px; display: flex; align-items: center; gap: 12px}
+button {font: 650 14px system-ui, sans-serif; background: #99ebc9; color: #132321; padding: 9px 13px; border: 0; border-radius: 6px; cursor: pointer}
+#status {color: #a0b4af; font-size: 12px}

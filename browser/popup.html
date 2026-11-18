@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpoilerVeil</title>
+<link rel="stylesheet" href="popup.css">
+<main>
+  <h1>SpoilerVeil</h1>
+  <p>Hide GTA VI spoilers in this browser.</p>
+  <label class="switch"><input id="enabled" type="checkbox"> Filter websites</label>
+  <label class="switch"><input id="related" type="checkbox"> Match character and location names</label>
+  <label class="switch"><input id="media" type="checkbox"> Hide media in Telegram Web</label>
+  <label for="extra">Custom words and phrases</label>
+  <textarea id="extra" rows="5" maxlength="12000" spellcheck="false" placeholder="One word or phrase per line"></textarea>
+  <footer><button id="save" type="button">Save rules</button><span id="status" role="status"></span></footer>
+</main>
+<script src="popup.js"></script>
+</html>

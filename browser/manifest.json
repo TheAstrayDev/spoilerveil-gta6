@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SpoilerVeil for GTA VI",
+  "version": "1.0.0",
+  "description": "Hide GTA VI spoilers on websites and in Telegram Web with on-device filtering.",
+  "permissions": ["storage"],
+  "action": {"default_popup": "popup.html", "default_title": "SpoilerVeil"},
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spoiler-shield-local@astray.local",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {"required": ["none"]}
+    }
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "css": ["shield.css"],
+    "js": ["defaults.js", "filter.js", "content.js"],
+    "run_at": "document_start",
+    "all_frames": true,
+    "match_about_blank": true
+  }]
+}

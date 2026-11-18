@@ -1,0 +1,39 @@
+html:not([data-shield-ready]) body {
+  opacity: 0 !important;
+}
+
+html[data-shield-page] body > :not(#spoiler-shield-screen) {
+  display: none !important;
+}
+
+html[data-shield-page] body {
+  color: transparent !important;
+}
+
+html[data-shield-enabled] [data-shield-hidden] {
+  display: none !important;
+}
+
+html[data-shield-telegram-media] :is(
+  [data-message-id], .Message, .bubble, .message-list-item, .tgme_widget_message
+) :is(img, video, iframe, canvas, svg image, .media-container, .media-inner,
+      .video-container, .photo, .media-photo, .webpage, .webpage-box, .Album),
+html[data-shield-telegram-media] .tgme_widget_message_photo_wrap,
+html[data-shield-telegram-media] .tgme_widget_message_video_player {
+  visibility: hidden !important;
+}
+
+#spoiler-shield-screen {
+  all: initial !important;
+  box-sizing: border-box !important;
+  display: grid !important;
+  place-items: center !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  color: #e8f5f1 !important;
+  background: #111b1c !important;
+  padding: 24px !important;
+  font: 600 20px/1.5 system-ui, sans-serif !important;
+  text-align: center !important;
+}
